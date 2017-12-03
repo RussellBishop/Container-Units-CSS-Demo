@@ -1,0 +1,19 @@
+@each $value in $justifyContentSettings {
+
+  .#{$iota-global-utilities-namespace}jc-#{$value} {
+    justify-content: map-get($justifyContentNames, $value);
+  }
+}
+
+@each $breakpoint, $values in $justifyContentResponsiveSettings {
+
+  @each $value in $values {
+
+    .#{$iota-global-utilities-namespace}jc-#{$value}\@#{$breakpoint} {
+
+      @include iota-breakpoint($breakpoint) {
+        justify-content: map-get($justifyContentNames, $value);
+      }
+    }
+  }
+}

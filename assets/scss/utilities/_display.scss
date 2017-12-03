@@ -1,0 +1,21 @@
+// @import 'node_modules/iotacss/utilities/display';
+
+@each $value in $displaySettings {
+
+  .#{$iota-global-utilities-namespace}#{$value} {
+    display: $value;
+  }
+}
+
+@each $breakpoint, $values in $displayResponsiveSettings {
+
+  @each $value in $values {
+
+    .#{$iota-global-utilities-namespace}#{$value}\@#{$breakpoint} {
+
+      @include iota-breakpoint($breakpoint) {
+        display: $value;
+      }
+    }
+  }
+}

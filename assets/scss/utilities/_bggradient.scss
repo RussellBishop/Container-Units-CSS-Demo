@@ -1,0 +1,25 @@
+// Options
+
+$iota-utils-bggradient           : true;
+$iota-utils-bggradient-namespace : 'bggradient-' !default;
+$iota-utils-bggradient-names     : () !default;
+
+
+
+
+// Helper Local Variables
+
+$iota-utils-bggradient-var: $iota-global-utilities-namespace + $iota-utils-bggradient-namespace;
+
+
+
+
+// Background Color Utilities
+
+@each $bggradient-name, $bggradient-value in $iota-utils-bggradient-names {
+
+  .#{$iota-utils-bggradient-var + $bggradient-name} {
+    background-image: #{$bggradient-value} !important;
+  }
+
+}

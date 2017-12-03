@@ -1,0 +1,33 @@
+// .#{$iota-global-utilities-namespace}ratio {
+//   $increment: 25%;
+
+//   @for $i from 1 through 8 {
+//     &-#{($i * $increment) / 1%} {
+//       @include intrinsic-ratio($i * $increment);
+//     }
+//   }
+// }
+
+
+
+
+@each $value in $ratioSettings {
+
+  .#{$iota-global-utilities-namespace}ratio-#{$value} {
+    @include intrinsic-ratio($value * 1%);
+  }
+}
+
+
+@each $breakpoint, $values in $ratioResponsiveSettings {
+
+  @each $value in $values {
+
+    .#{$iota-global-utilities-namespace}ratio-#{$value}\@#{$breakpoint} {
+
+      @include iota-breakpoint($breakpoint) {
+        @include intrinsic-ratio($value * 1%);
+      }
+    }
+  }
+}

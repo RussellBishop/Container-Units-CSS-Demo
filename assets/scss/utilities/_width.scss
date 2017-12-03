@@ -1,0 +1,20 @@
+.#{$iota-global-utilities-namespace}width- {
+  &auto {
+    width: auto;
+  }
+  &100 {
+    width: 100%;
+  }
+
+  &1rem {
+    width: 1rem;
+  }
+
+  &2rem {
+    width: 2rem;
+  }
+
+  &3rem {
+    width: 3rem;
+  }
+}

@@ -1,0 +1,12 @@
+@each $container, $values in $guttersSettings {
+
+  @each $values in $values {
+
+    .#{$iota-global-utilities-namespace}gutterspan#{$values}\@#{$container} {
+
+      @include iota-breakpoint($container) {
+        width: gutters($values, $container);
+      }
+    }
+  }
+}

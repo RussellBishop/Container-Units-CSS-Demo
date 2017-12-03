@@ -1,0 +1,35 @@
+/**
+ * Background color names
+ *
+ * Type: Map
+ */
+
+$colour-burn: rgba(#F35F4A, .2);
+
+$iota-utils-bgcolor-only-names: (
+
+  burn: $colour-burn,
+
+);
+
+
+/**
+ * Background color build full map including shared colors.
+ *
+ * Type: Map
+ */
+
+
+$iota-utils-bgcolor-names: map-merge($iota-colors-shared, $iota-utils-bgcolor-only-names);
+
+
+/**
+ * Namespace classes
+ *
+ * Type: String
+ */
+
+$iota-utils-bgcolor-namespace: 'bgcolor-';
+
+
+@import 'node_modules/iotacss/utilities/bgcolor';

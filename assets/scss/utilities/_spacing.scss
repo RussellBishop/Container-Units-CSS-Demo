@@ -1,0 +1,28 @@
+.#{$iota-global-utilities-namespace}spacing {
+
+  @include spacing(baseline(1));
+
+  @each $value in $spacingSettings {
+
+    &-#{$value} {
+
+      @include spacing(baseline($value));
+
+    }
+  }
+}
+
+@each $breakpoint, $values in $spacingResponsiveSettings {
+
+  @each $value in $values {
+
+    .#{$iota-global-utilities-namespace}spacing-#{$value}\@#{$breakpoint} {
+
+      @include iota-breakpoint($breakpoint) {
+
+        @include spacing(baseline($value));
+
+      }
+    }
+  }
+}

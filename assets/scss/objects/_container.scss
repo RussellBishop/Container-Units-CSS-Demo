@@ -1,0 +1,15 @@
+:root {
+  --ContainerWidth: 100vw;
+
+    @each $breakpointName, $containerWidth in $containerSettings {
+
+      @include iota-breakpoint($breakpointName) {
+        --ContainerWidth: $containerWidth;
+      }
+    }
+}
+
+.o-container {
+  @extend .u-mh-auto;
+  width: var(--ContainerWidth);
+}

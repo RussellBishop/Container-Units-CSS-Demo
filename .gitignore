@@ -1,0 +1,9 @@
+/dist/*
+/node_modules/*
+/vendor/*
+
+*.sublime-project
+
+*.sublime-workspace
+.gulprc
+.DS_Store

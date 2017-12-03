@@ -1,0 +1,40 @@
+/**
+ * Shortname your properties
+ *
+ * Sytax:
+ * 'shortname': property
+ */
+$flexDirectionNames: (
+  'row': row,
+  'rowrev': row-reverse,
+  'col': column,
+  'colrev': column-reverse,
+);
+
+
+
+
+/**
+ * Settings
+ * For global classes - no breakpoints
+ *
+ * Sytax:
+ * shortname,
+ */
+
+$flexDirectionSettings: (
+  col,
+);
+
+
+
+
+/**
+ * Responsive Settings
+ * For @media breakpoint settings
+ */
+
+$flexDirectionResponsiveSettings: (
+  frommed: (col),
+);
+

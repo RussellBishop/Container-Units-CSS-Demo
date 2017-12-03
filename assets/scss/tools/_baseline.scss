@@ -1,0 +1,3 @@
+@function baseline($multiplier) {
+  @return $iota-global-baseline * $multiplier;
+}

@@ -1,0 +1,5 @@
+@mixin spacing($amount) {
+  > * + * {
+    margin-top: $amount;
+  }
+}

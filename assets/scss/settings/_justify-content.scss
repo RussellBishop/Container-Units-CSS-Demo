@@ -1,0 +1,43 @@
+/**
+ * Shortname your properties
+ *
+ * Sytax:
+ * 'shortname': property
+ */
+$justifyContentNames: (
+  'start': flex-start,
+  'end': flex-end,
+  'center': center,
+  'between': space-between,
+  'around': space-around,
+);
+
+
+
+
+/**
+ * Settings
+ * For global classes - no breakpoints
+ *
+ * Sytax:
+ * shortname,
+ */
+
+$justifyContentSettings: (
+  between,
+  // end,
+  // center,
+  // around,
+);
+
+
+
+
+/**
+ * Responsive Settings
+ * For @media breakpoint settings
+ */
+
+$justifyContentResponsiveSettings: (
+);
+

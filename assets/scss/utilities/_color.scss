@@ -1,0 +1,27 @@
+/**
+ * Color names
+ *
+ * Type: Map
+ */
+
+$colour-sapphire: #8595D6;
+
+$iota-utils-color-only-names: (
+
+  sapphire: $colour-sapphire,
+
+);
+
+$iota-utils-color-names: map-merge($iota-colors-shared, $iota-utils-color-only-names);
+
+
+/**
+ * Namespace classes
+ *
+ * Type: String
+ */
+
+$iota-utils-color-namespace: 'color-';
+
+
+@import 'node_modules/iotacss/utilities/color';

@@ -1,0 +1,10 @@
+:root {
+  --ColumnCount: 12;
+  --ColumnDecimal: .07;
+
+  --GutterCount: calc(var(--ColumnCount) - 1);
+  --GutterDecimal: calc((1 - (var(--ColumnCount) * var(--ColumnDecimal))) / var(--GutterCount));
+
+  --ColumnUnit: calc(var(--ColumnDecimal) * var(--ContainerWidth));
+  --GutterUnit: calc(var(--GutterDecimal) * var(--ContainerWidth));
+}

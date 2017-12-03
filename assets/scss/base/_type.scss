@@ -1,0 +1,38 @@
+:root {
+  $baseFontSmall: $type-16px;
+  $baseFontLarge: $type-22px;
+
+  @include iota-type($baseFontSmall);
+
+  @include iota-breakpoint(mintomax) {
+    font-size: calc(
+      #{$baseFontSmall}
+      + (#{strip-unit($baseFontLarge)} - #{strip-unit($baseFontSmall)})
+        * ((100vw - #{$iota-global-breakpoints-value-min}) / ( #{strip-unit($iota-global-breakpoints-value-max)} - #{strip-unit($iota-global-breakpoints-value-min)}))
+    );
+  }
+
+  @include iota-breakpoint(frommax) {
+    @include iota-type($baseFontLarge);
+  }
+
+  font-family: $font-stack-tetra;
+  color: $colour-aqua;
+  line-height: (22/16); // does this need to be on :root though...
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
