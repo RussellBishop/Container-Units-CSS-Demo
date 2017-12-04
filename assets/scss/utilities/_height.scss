@@ -12,6 +12,10 @@
     height: 80vh;
   }
 
+  &-b-1 {
+    height: baseline(1);
+  }
+
   &-100 {
     height: 100%;
   }

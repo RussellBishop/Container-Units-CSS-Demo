@@ -1,16 +1,5 @@
 // config
 $containerMaxWidth: 1246px;
-$containerColumns: 12;
-$containerGutters: $containerColumns - 1;
-
-// columns
-$containerColumnWidth: percentage(76/1200);
-$containerColumnsWidthsTotal: $containerColumnWidth * $containerColumns; // %
-
-// gutters
-$containerGuttersWidthsTotal: 100% - $containerColumnsWidthsTotal; // %
-$containerGutterWidth: $containerGuttersWidthsTotal / $containerGutters;
-
 
 /**
  * Container widths

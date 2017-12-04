@@ -1,0 +1,70 @@
+/**
+ * .c-span
+ * Sample component
+ *
+ * Used:
+ * here, here and here.
+ */
+
+$component: 'span';
+
+.#{$iota-global-components-namespace + $component} {
+  display: flex;
+  height: 5vh;
+  justify-content: space-between;
+  border-radius: .5rem;
+
+  &:before,
+  &:after {
+    width: gutters(.5);
+    background-color: $colour-aqua;
+    border-radius: inherit;
+    content: '';
+  }
+}
+
+.#{$iota-global-components-namespace + $component} {
+  animation: 1.5s updown infinite;
+  transition: background .5s ease;
+
+  *:hover > & {
+    opacity: 1 !important;
+    background-color: rgba($colour-aqua, .7);
+
+    &:before {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:after {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  33%,
+  66% {
+    opacity: .3;
+  }
+
+  33% {
+    transform: translateY(-500%);
+  }
+
+  66% {
+    transform: translateY(500%);
+  }
+}

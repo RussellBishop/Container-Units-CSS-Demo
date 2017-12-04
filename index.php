@@ -12,57 +12,7 @@
 
         <h1>Container Units CSS</h1>
 
-        <div class="u-flex u-jc-between u-height-80vh">
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-            <div class="u-columnspan-1 u-bgcolor-burn" style="mix-blend-mode: hard-light;">
-
-            </div>
-
-        </div>
+        <?php require 'components/grid.php'; ?>
 
         <div class="c-speech u-ph-c-1 u-pv-r-05 u-bgcolor-aqua u-color-purple u-radius-10px">
             Your container’s width is set as a CSS variable
