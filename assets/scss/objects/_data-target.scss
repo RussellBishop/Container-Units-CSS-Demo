@@ -1,0 +1,16 @@
+[data-target] {
+
+}
+
+[data-group] {
+  &:not(.is--open) {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+[data-toggle] {
+
+}

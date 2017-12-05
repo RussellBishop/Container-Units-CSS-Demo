@@ -44,33 +44,54 @@ elixir.config.browserSync.proxy = config.browserSync.proxy;
  */
 elixir(function(mix) {
     /**
-     * Copy files!
-     *
-     * Any assets that are not written by us, like fonts and images, should
-     * just be copied.
-     *
-     * The reason we don't just put them in the public path is so that you
-     * are not working between two directories. This also means me can just
-     * add the public path to our .gitignore!
+     * Copy files
      */
+    mix.copy(
+        elixir.config.assetsPath + '/font',
+        elixir.config.publicPath + '/font'
+    );
+
+    mix.copy(
+        elixir.config.assetsPath + '/img',
+        elixir.config.publicPath + '/img'
+    );
+
+    mix.copy(
+        elixir.config.assetsPath + '/svg/single',
+        elixir.config.publicPath + '/svg/single'
+    );
+
+    /**
+     * JavaScript
+     *
+     * Compiles assets/js/main.js to dist/js/main.js
+     */
+    mix.webpack('main.js');
 
     /**
      * SCSS
      *
-     * Compiles assets/scss/style.scss to dist/css/style.css.
+     * Compiles assets/scss/main.scss to dist/css/main.css.
      */
     mix.sass('main.scss');
 
     /**
-     * Browsersync
+     * SVG Symbols
      *
-     * Add any directories that should affect when your page
-     * is refreshed.
+     * Copys all SVGs to the public path as well as creating a symbol.svg.
+     */
+    mix.svgSprite(
+        elixir.config.assetsPath + '/svg/sprite',
+        elixir.config.publicPath + '/svg'
+    );
+
+    /**
+     * Browsersync
      */
     mix.browserSync({
         files: [
             elixir.config.publicPath + '/' + elixir.config.css.outputFolder + '/**/*.css',
-            elixir.config.publicPath + '/' + elixir.config.js.outputFolder + '/**/*.js',
+            elixir.config.publicPath + '/' + elixir.config.js.outputFolder + '/**/*.js'
         ]
     });
 });

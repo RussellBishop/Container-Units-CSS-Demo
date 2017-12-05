@@ -23,23 +23,23 @@ $component: 'span';
   }
 }
 
+// make the spans animate up and down
 .#{$iota-global-components-namespace + $component} {
   animation: 1.5s updown infinite;
+}
+
+.#{$iota-global-components-namespace + $component}--filled {
+  background-color: rgba($colour-aqua, .7);
   transition: background .5s ease;
 
-  *:hover > & {
-    opacity: 1 !important;
-    background-color: rgba($colour-aqua, .7);
+  &:before {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-    &:before {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:after {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
+  &:after {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 
