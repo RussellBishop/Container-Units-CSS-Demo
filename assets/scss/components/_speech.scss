@@ -1,0 +1,19 @@
+/**
+ * .c-speech
+ * Sample component
+ *
+ * Used:
+ * here, here and here.
+ */
+
+$component: 'speech';
+
+.#{$iota-global-components-namespace + $component} {
+
+  @extend .u-ph-c-1;
+  @extend .u-pv-r-05;
+  @extend .u-bgcolor-aqua;
+  @extend .u-color-purple;
+  @extend .u-radius-10px;
+
+}

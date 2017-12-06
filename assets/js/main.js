@@ -1,8 +1,8 @@
 var $ = require('jquery');
 
-require('svgxuse');
+// require('svgxuse');
 
-import './css-variables.polyfill';
+// import './css-variables.polyfill';
 
 
 $( document ).ready(function() {
