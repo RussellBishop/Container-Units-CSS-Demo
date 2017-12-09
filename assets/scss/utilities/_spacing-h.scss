@@ -1,0 +1,5 @@
+.u-spacing-h {
+  > * + * {
+    margin-left: gutters(1);
+  }
+}

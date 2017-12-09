@@ -1,0 +1,5 @@
+body {
+  > *:empty {
+    display: none !important;
+  }
+}

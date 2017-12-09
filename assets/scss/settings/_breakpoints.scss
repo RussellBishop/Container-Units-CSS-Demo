@@ -8,8 +8,7 @@
  */
 
 $iota-global-breakpoints-value-min: 320px;
-
-$iota-global-breakpoints-value-max: $containerMaxWidth + 26px + 26px;
+$iota-global-breakpoints-value-max: ($containerMaxWidth / ($designContainerPx/$designArtboardPx));
 
 $iota-global-breakpoints: (
   uptomin:

@@ -1,3 +1,9 @@
-.#{$iota-global-utilities-namespace}h1 {
+.#{$iota-global-utilities-namespace}type {
+  &-20 {
+    font-size: $type-20;
+  }
+}
 
+.#{$iota-global-utilities-namespace}nowrap {
+  white-space: nowrap;
 }

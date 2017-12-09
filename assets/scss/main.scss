@@ -5,6 +5,7 @@
 @import 'settings/colours';
 @import 'settings/display';
 @import 'settings/gutters';
+@import 'settings/gutterspan';
 @import 'settings/justify-content';
 @import 'settings/ratio';
 @import 'settings/spacing';
@@ -46,11 +47,13 @@
 @import 'utilities/opacity';
 @import 'utilities/padding';
 @import 'utilities/position';
+@import 'utilities/spacing-h';
 @import 'utilities/text';
 @import 'utilities/type';
 @import 'utilities/weight';
 
 @import 'utilities/abscentre';
+@import 'utilities/animation';
 @import 'utilities/absfill';
 @import 'utilities/border-radius';
 @import 'utilities/bgcover';
@@ -61,6 +64,7 @@
 @import 'utilities/flex-grow';
 @import 'utilities/flex-shrink';
 @import 'utilities/flex-wrap';
+@import 'utilities/gutters';
 @import 'utilities/gutterspan';
 @import 'utilities/height';
 @import 'utilities/overflow';
@@ -72,3 +76,4 @@
 @import 'utilities/z-index';
 
 @import 'dev/markup-validate';
+@import 'dev/notifications';

@@ -4,7 +4,7 @@
 
 [data-group] {
   &:not(.is--open) {
-    position: fixed;
+    @extend .u-fixed;
     z-index: -1;
     opacity: 0;
     pointer-events: none;

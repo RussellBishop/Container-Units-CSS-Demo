@@ -1,7 +1,4 @@
 :root {
-  $baseFontSmall: $type-16px;
-  $baseFontLarge: $type-22px;
-
   @include iota-type($baseFontSmall);
 
   @include iota-breakpoint(mintomax) {
@@ -19,6 +16,10 @@
   font-family: $font-stack-tetra;
   color: $colour-aqua;
   line-height: (22/16); // does this need to be on :root though...
+}
+
+code {
+  font: inherit;
 }
 
 a {

@@ -9,11 +9,13 @@
 $component: 'speech';
 
 .#{$iota-global-components-namespace + $component} {
-  @extend .u-ph-c-1;
+  @extend .u-ph-g-2;
   @extend .u-pv-r-05;
   @extend .u-bgcolor-aqua;
   @extend .u-color-purple;
   @extend .u-radius-10px;
+  min-height: 2rem;
+  font-weight: normal;
 
   svg {
     animation: pulse .4s infinite;

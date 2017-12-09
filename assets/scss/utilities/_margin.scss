@@ -17,11 +17,6 @@ $iota-utils-margin-default: (baseline(1));
 
 $iota-utils-margin-extra: (
   -auto: null auto auto auto auto auto auto,
-  -x2: null null null baseline(2) null null null,
-  -x3: null baseline(3) null baseline(3) null null null,
-  -x5: null baseline(5) null baseline(5) null null null,
-  -x8: null null null baseline(8) null baseline(8) null,
-  -x13: null baseline(13) null null null null null,
 );
 
 
@@ -63,4 +58,8 @@ $iota-utils-margin-horizontal-name  : 'h';
 
 .#{$iota-global-utilities-namespace}ml {
   margin-left: 1rem;
+
+  &-c-1 {
+    margin-left: columns(1);
+  }
 }

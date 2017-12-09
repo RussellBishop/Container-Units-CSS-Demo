@@ -10,23 +10,15 @@ $component: 'demo';
 
 .#{$iota-global-components-namespace + $component} {
 
-  &--container-1 {
-    .u-columnspan-1 {
-      width: 100%;
-    }
-  }
+  // &--container-1 {
+  //   .u-columnspan-1 {
+  //     width: 100%;
+  //   }
+  // }
 
-  .is--open &--container-2 {
-    .u-columnspan-1 {
-      animation: unexpand 1s forwards;
-    }
-  }
-}
-
-@keyframes unexpand {
-
-  0% {
-    width: 100%;
-  }
-
+  // .is--open &--container-2 {
+  //   .u-columnspan-1 {
+  //     animation: unexpand 1s forwards;
+  //   }
+  // }
 }

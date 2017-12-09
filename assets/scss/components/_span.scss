@@ -12,7 +12,7 @@ $component: 'span';
   display: flex;
   height: 5vh;
   justify-content: space-between;
-  border-radius: .5rem;
+  border-radius: 3px;
 
   &:before,
   &:after {
@@ -21,52 +21,20 @@ $component: 'span';
     border-radius: inherit;
     content: '';
   }
-}
 
-// make the spans animate up and down
-.#{$iota-global-components-namespace + $component} {
-  animation: 1.5s updown infinite;
-}
+  &--filled {
+    background-color: rgba($colour-aqua, .7);
+    transition: background .5s ease;
 
-.#{$iota-global-components-namespace + $component}--filled {
-  background-color: rgba($colour-aqua, .7);
-  transition: background .5s ease;
+    &:before {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
 
-  &:before {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  &:after {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    &:after {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 }
 
-@keyframes updown {
-  $distance: 15vh;
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-
-  33%,
-  66% {
-    opacity: .3;
-  }
-
-  33% {
-    transform: translateY($distance * -1);
-  }
-
-  66% {
-    transform: translateY($distance);
-  }
-}

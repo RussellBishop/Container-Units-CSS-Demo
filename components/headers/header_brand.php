@@ -8,11 +8,11 @@
     class="u-flex u-ai-center is--open">
 
     <h1>
-        <a href="/" class="u-flex u-ai-center u-color-aqua">
+        <a href="/" class="u-flex u-ai-center u-spacing-h u-color-aqua">
             <svg class="u-block" width="34" height="34" viewBox="0 0 34 34">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/svg/sprite.svg#github"></use>
             </svg>
-            <span class="u-weight-bold">container units css</span>
+            <span class="u-type-20 u-weight-bold">container units css</span>
         </a>
     </h1>
 </header>
