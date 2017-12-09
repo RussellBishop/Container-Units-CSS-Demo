@@ -44,6 +44,8 @@ $component: 'span';
 }
 
 @keyframes updown {
+  $distance: 15vh;
+
   0%,
   100% {
     transform: translateY(0);
@@ -61,10 +63,10 @@ $component: 'span';
   }
 
   33% {
-    transform: translateY(-500%);
+    transform: translateY($distance * -1);
   }
 
   66% {
-    transform: translateY(500%);
+    transform: translateY($distance);
   }
 }

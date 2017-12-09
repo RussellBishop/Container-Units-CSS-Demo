@@ -1,3 +1,18 @@
+/**
+ * .o-container
+ * Sample component
+ *
+ * Used:
+ * here, here and here.
+ */
+
+$object: 'container';
+
+.#{$iota-global-objects-namespace + $object} {
+  @extend .u-mh-auto;
+  width: var(--ContainerWidth);
+}
+
 :root {
   --ContainerWidth: 100vw;
 
@@ -7,9 +22,4 @@
         --ContainerWidth: $containerWidth;
       }
     }
-}
-
-.o-container {
-  @extend .u-mh-auto;
-  width: var(--ContainerWidth);
 }

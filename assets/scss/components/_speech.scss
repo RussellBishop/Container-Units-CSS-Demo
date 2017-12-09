@@ -9,11 +9,24 @@
 $component: 'speech';
 
 .#{$iota-global-components-namespace + $component} {
-
   @extend .u-ph-c-1;
   @extend .u-pv-r-05;
   @extend .u-bgcolor-aqua;
   @extend .u-color-purple;
   @extend .u-radius-10px;
 
+  svg {
+    animation: pulse .4s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    // opacity: .8;
+  }
+
+  100% {
+    transform: translateX(20%);
+    opacity: 1;
+  }
 }

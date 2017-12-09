@@ -1,0 +1,11 @@
+/**
+ * .o-document
+ * Grid to the header, grid and footer
+ */
+
+$object: 'document';
+
+.#{$iota-global-objects-namespace + $object} {
+  display: grid;
+  grid-template-rows: 1fr 50vh 1fr;
+}

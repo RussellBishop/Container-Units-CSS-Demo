@@ -1,4 +1,4 @@
-<div class="u-flex u-jc-between u-height-80vh">
+<div class="c-demo--container-1 u-flex u-jc-between" data-id="grid-container-1" data-group="grids">
 
     <?php for ($k = 0 ; $k < 12; $k++) : ?>
 

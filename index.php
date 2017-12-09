@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="u-height-100">
+<html lang="en" class="u-grid u-height-100 u-bgcolor-purple">
+
 <head>
     <meta charset="UTF-8">
     <title>SCSS Playground</title>
@@ -7,33 +8,20 @@
     <link rel="stylesheet" type="text/css" href="/dist/css/main.css">
     <script src="/dist/js/bundle.js"></script>
 </head>
-<body
-    class="
-        u-bgcolor-purple
-        u-flex
-        u-ai-center
-        u-jc-center
-        u-height-100">
 
-    <div
-        class="
-            o-container
-            u-flex
-            u-fd-col">
+<body class="u-grid">
 
-        <div class="u-fg-1">
-            <h1>Container Units CSS</h1>
-        </div>
+    <div class="o-document o-container">
 
-        <?php require 'components/intro.php'; ?>
+        <?php require 'components/headers/header_brand.php'; ?>
 
-        <?php require 'components/demo_container_1.php'; ?>
+        <?php require 'components/grids/grid_intro.php'; ?>
+        <?php require 'components/grids/grid_container_1.php'; ?>
 
-        <?php require 'components/demo_container_2.php'; ?>
-
-        <div class="u-fg-1 u-flex u-fd-col u-jc-center">
-            <?php require 'components/speech.php'; ?>
-        </div>
+        <footer class="u-flex u-ai-center">
+            <?php require 'components/buttons/button_start_demo.php'; ?>
+            <?php require 'components/buttons/button_demo_container_1.php'; ?>
+        </footer>
 
     </div>
 
