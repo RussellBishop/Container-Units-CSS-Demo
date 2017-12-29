@@ -14,3 +14,8 @@
 [data-toggle] {
 
 }
+
+[data-group="buttons"] {
+  display: flex !important;
+  position: static !important;
+}

@@ -11,5 +11,5 @@
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/svg/sprite.svg#play"></use>
     </svg>
 
-    <span class="u-type-20">quick demo</span>
+    <span class="u-type-20">how it works</span>
 </button>

@@ -1,6 +1,6 @@
 /**
  * .c-speech
- * Sample component
+ * Speech bubble aka button
  *
  * Used:
  * here, here and here.
@@ -19,6 +19,12 @@ $component: 'speech';
 
   svg {
     animation: pulse .4s infinite;
+  }
+
+  &:focus {
+    @extend .u-color-aqua;
+    background: transparent;
+    border: 2px solid $colour-aqua;
   }
 }
 
